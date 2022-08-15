@@ -1,0 +1,17 @@
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.BusinessLayer.deps.json
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.BusinessLayer.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.Core.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.Core.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.csproj.CopyComplete
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/refint/Museums.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/Museums.BusinessLayer.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/Debug/net6.0/ref/Museums.BusinessLayer.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.Service.Scraping.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/bin/Debug/net6.0/Museums.Service.Scraping.pdb

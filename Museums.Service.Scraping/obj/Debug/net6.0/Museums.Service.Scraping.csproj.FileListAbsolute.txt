@@ -1,0 +1,15 @@
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/bin/Debug/net6.0/Museums.Service.Scraping.deps.json
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/bin/Debug/net6.0/Museums.Service.Scraping.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/bin/Debug/net6.0/Museums.Service.Scraping.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/bin/Debug/net6.0/Museums.Core.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/bin/Debug/net6.0/Museums.Core.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.csproj.CopyComplete
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/refint/Museums.Service.Scraping.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/Museums.Service.Scraping.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/Debug/net6.0/ref/Museums.Service.Scraping.dll

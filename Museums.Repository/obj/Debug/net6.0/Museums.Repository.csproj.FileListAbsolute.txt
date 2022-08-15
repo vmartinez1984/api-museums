@@ -1,0 +1,15 @@
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/bin/Debug/net6.0/Museums.Repository.deps.json
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/bin/Debug/net6.0/Museums.Repository.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/bin/Debug/net6.0/Museums.Repository.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/bin/Debug/net6.0/Museums.Core.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/bin/Debug/net6.0/Museums.Core.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.csproj.AssemblyReference.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.AssemblyInfoInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.AssemblyInfo.cs
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.csproj.CoreCompileInputs.cache
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.csproj.CopyComplete
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/refint/Museums.Repository.dll
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/Museums.Repository.pdb
+/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/Debug/net6.0/ref/Museums.Repository.dll
