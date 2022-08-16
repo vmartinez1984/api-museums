@@ -54,8 +54,11 @@ namespace Museums.Service.Scraping
             string scheduleAndPrice;
             HtmlNode htmlNode;
 
-            htmlNode = htmlDocument.DocumentNode.CssSelect("#datoscomplemento > p").First();
-            scheduleAndPrice = htmlNode.InnerText;
+            htmlNode = htmlDocument.DocumentNode.CssSelect("#datoscomplemento > p").FirstOrDefault();
+            if (htmlNode is null)
+                scheduleAndPrice = string.Empty;
+            else
+                scheduleAndPrice = htmlNode.InnerText;
 
             return scheduleAndPrice;
         }

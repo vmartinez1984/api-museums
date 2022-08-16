@@ -1,9 +1,6 @@
-﻿using System.ComponentModel;
-using AutoMapper;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Museums.Core.Dtos;
-using Museums.Core.Entities;
 using Museums.Core.Interfaces;
 
 namespace Museums.Service.Scraping;
@@ -45,11 +42,16 @@ public class WorkerService : IHostedService, IDisposable
 
             dateTime = DateTime.Now;
             ValidateCrontab(item);
-            // if (item.Minute == dateTime.Minute && item.Hour == dateTime.Hour && item.DayOfWeek == Convert.ToInt32(dateTime.DayOfWeek)
-            //     && item.DayOfMonth == dateTime.Day && item.Month == dateTime.Month)
-            // {
-
-            //}
+            if (
+                item.Minute == dateTime.Minute 
+                && item.Hour == dateTime.Hour 
+                && item.DayOfWeek == Convert.ToInt32(dateTime.DayOfWeek)
+                && item.DayOfMonth == dateTime.Day 
+                && item.Month == dateTime.Month
+            )
+            {
+                _unitOfWorkBl.Scrapy.Process();
+            }
         }
     }
 

@@ -15,12 +15,6 @@ builder.Host.UseSerilog((context, config) =>
 {
     config.ReadFrom.Configuration(context.Configuration);
 });
-// var logger = new LoggerConfiguration()
-// .ReadFrom.Configuration(builder.Configuration)
-// .Enrich.FromLogContext()
-// .CreateLogger();
-// builder.Logging.ClearProviders();
-// builder.Logging.AddSerilog(logger);
 
 builder.Services.AddControllers();
 // Add services to the container.
@@ -36,7 +30,7 @@ builder.Services.AddScoped<ILogBl, LogBl>();
 builder.Services.AddScoped<IScrapyBl, ScrapyBl>();
 builder.Services.AddScoped<IUnitOfWorkBl, UnitOfWorkBl>();
 //services
-//builder.Services.AddHostedService<WorkerService>();
+builder.Services.AddHostedService<WorkerService>();
 
 //Mappers
 var mapperConfig = new MapperConfiguration(mapperConfig =>
@@ -88,6 +82,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.UseSerilogRequestLogging();
+//app.UseSerilogRequestLogging();
 
 app.Run();

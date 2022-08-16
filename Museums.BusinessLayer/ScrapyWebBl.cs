@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using Microsoft.Extensions.Logging;
 using Museums.Core.Entities;
 using Museums.Core.Interfaces;
 using Museums.Service.Scraping;
@@ -9,15 +10,18 @@ namespace Museums.BusinessLayer
     {
         private BackgroundWorker _backgroundWorker;
         private ScrapService _scrapService;
+        private ILogger<ScrapyBl> _logger;
         private IRepository _repository;
 
         public ScrapyBl(
-            IRepository repository,
-            ScrapService scrapService
+            IRepository repository
+            , ScrapService scrapService
+            , ILogger<ScrapyBl> logger
         )
         {
             _repository = repository;
             _scrapService = scrapService;
+            _logger = logger;
             _backgroundWorker = new BackgroundWorker();
             _backgroundWorker.DoWork += DoWork;
             _backgroundWorker.RunWorkerCompleted += RunWorkerCompleted;
@@ -46,6 +50,7 @@ namespace Museums.BusinessLayer
 
         private void DoWork(object sender, DoWorkEventArgs e)
         {
+            _logger.LogInformation("Inicia proceso de actualización");
             List<MuseumEntity> entities;
             LogEntity logEntity;
 
@@ -60,29 +65,32 @@ namespace Museums.BusinessLayer
                 {
                     MuseumEntity museum;
 
-                    museum = _repository.Museum.GetAsync(entity.MuseoId).Result;
-                    if (entity.FechaMod is null || ((DateTime)museum.FechaMod).Date != ((DateTime)entity.FechaMod).Date)
+                    museum = _repository.Museum.GetAsync(entity.MuseoId).Result;                    
+                    //if (entity.FechaMod is null || ((DateTime)museum.FechaMod).Date != ((DateTime)entity.FechaMod).Date)
+                    //{
+                    try
                     {
-                        try
-                        {
-                            logEntity.MuseumIdInProcess = museum.Id;
-                            _repository.Log.Update(logEntity);
-                            museum.State = "Process";
-                            _repository.Museum.Update(museum);
-                            _scrapService.GetMuseum(entity);
-                            entity.Id = museum.Id;
-                            entity.State = "Update";
-                            _repository.Museum.Update(museum);
-                        }
-                        catch (Exception ex)
-                        {
-                            logEntity.NumberErrors++;
-                        }
+                        logEntity.MuseumIdInProcess = museum.Id;
+                        _repository.Log.Update(logEntity);
+                        museum.State = "Process";
+                        _repository.Museum.Update(museum);
+                        _scrapService.GetMuseum(entity);
+                        entity.Id = museum.Id;
+                        entity.State = "Update";
+                        _repository.Museum.Update(museum);
+                        _logger.LogInformation("id: " + museum.Id + $"{logEntity.NumberOfUpdates} updates");
                     }
+                    catch (Exception ex)
+                    {
+                        logEntity.NumberErrors++;
+                        _logger.LogError(ex.Message);
+                    }
+                    //}
                     logEntity.NumberOfUpdates++;
                     _repository.Log.Update(logEntity);
                 }
             }
+            _logger.LogInformation($"{logEntity.NumberOfUpdates} Updates {logEntity.NumberErrors} erros");
             logEntity.DateEndExecution = DateTime.Now;
             _repository.Log.Update(logEntity);
         }
