@@ -72,12 +72,12 @@ namespace Museums.BusinessLayer
                     {
                         logEntity.MuseumIdInProcess = museum.Id;
                         _repository.Log.Update(logEntity);
-                        museum.State = "Process";
-                        _repository.Museum.Update(museum);
+                        entity.State = "Process";
+                        _repository.Museum.Update(entity);
                         _scrapService.GetMuseum(entity);
                         entity.Id = museum.Id;
                         entity.State = "Update";
-                        _repository.Museum.Update(museum);
+                        _repository.Museum.Update(entity);
                         _logger.LogInformation("id: " + museum.Id + $"{logEntity.NumberOfUpdates} updates");
                     }
                     catch (Exception ex)

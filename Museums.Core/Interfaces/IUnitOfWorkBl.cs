@@ -42,6 +42,8 @@ namespace Museums.Core.Interfaces
 
         Task<List<MuseumDto>> GetAsync();
 
+        Task<MuseumPagerDto> GetAsync(PagerDto pager);
+
         Task UpdateAsync(MuseumDto museum);
 
         void Update(MuseumDto museum);

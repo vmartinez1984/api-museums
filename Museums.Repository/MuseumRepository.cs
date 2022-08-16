@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using Museums.Core.Entities;
 using Museums.Core.Interfaces;
@@ -44,6 +45,28 @@ namespace Museums.Repository
                 .ToListAsync();
             var count = entities.Count();
             //entities = await _collection.Find(_ => true).ToListAsync();
+
+            return entities;
+        }
+
+        public async Task<List<MuseumEntity>> GetAsync(Pager pager)
+        {
+            List<MuseumEntity> entities;
+            FilterDefinition<MuseumEntity> filter;
+
+            if (string.IsNullOrEmpty(pager.Search))
+                filter = Builders<MuseumEntity>.Filter.Where(_ => true);
+            else
+                filter = Builders<MuseumEntity>.Filter.Where(x => x.MuseoNombre.ToLower().Contains(pager.Search.ToLower()));
+
+
+            entities = await _collection.Find(filter)
+                .Sort("{MuseoId:1}")
+                .Skip((pager.PageCurrent - 1) * pager.RecordsPerPage)
+                .Limit(pager.RecordsPerPage)
+                .ToListAsync();
+            pager.TotalRecordsFiltered = entities.Count();
+            pager.TotalRecords = (int)await _collection.CountDocumentsAsync(new BsonDocument());
 
             return entities;
         }

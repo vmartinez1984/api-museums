@@ -18,7 +18,7 @@
             <returns></returns>
             <response code="201">Return id</response>
         </member>
-        <member name="M:Museums.Api.Controllers.MuseumsController.Get">
+        <member name="M:Museums.Api.Controllers.MuseumsController.Get(Museums.Core.Dtos.PagerDtoIn)">
             <summary>
             Get list of museums from CDMX
             </summary>

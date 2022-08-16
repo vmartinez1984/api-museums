@@ -62,4 +62,9 @@ namespace Museums.Core.Dtos
 
         public string State { get; set; }
     }
+
+    public class MuseumPagerDto: PagerDto
+    {
+        public List<MuseumDto> ListMuseums { get; set; }
+    }
 }

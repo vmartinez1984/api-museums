@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Museums.Api.Helpers;
 using Museums.Api.Models;
 using Museums.Core.Dtos;
 using Museums.Core.Interfaces;
@@ -17,7 +18,7 @@ namespace Museums.Api.Controllers
         public MuseumsController(
             IUnitOfWorkBl unitOfWorkBl
             , ScrapService scrapService
-            ,ILogger<MuseumsController> logger
+            , ILogger<MuseumsController> logger
         )
         {
             _unitOfWorkBl = unitOfWorkBl;
@@ -32,11 +33,21 @@ namespace Museums.Api.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [Produces("application/json")]
-        public async Task<IEnumerable<MuseumDto>> Get()
+        public async Task<IEnumerable<MuseumDto>> Get([FromQuery] PagerDtoIn pagerIn)
         {
-            var list = await _unitOfWorkBl.Museum.GetAsync();
+            PagerDto pager;
 
-            return list;
+            pager = new PagerDto
+            {
+                PageCurrent = pagerIn.PageCurrent,
+                RecordsPerPage = pagerIn.RecordsPerPage,
+                Search = pagerIn.Search
+            };
+            var museumPager = await _unitOfWorkBl.Museum.GetAsync(pager);
+            this.HttpContext.AddHeaderTotalRecords(museumPager.TotalRecords);
+            this.HttpContext.AddHeaderTotalRecordsFiltered(museumPager.TotalRecordsFiltered);
+
+            return museumPager.ListMuseums;
         }
 
         /// <summary>
@@ -72,7 +83,7 @@ namespace Museums.Api.Controllers
 
             _id = _unitOfWorkBl.Scrapy.Process(id);
 
-            return Accepted($"Api/Museums/UpdateFromSic/{_id}/status",new { Id = _id });
+            return Accepted($"Api/Museums/UpdateFromSic/{_id}/status", new { Id = _id });
         }
 
         /// <summary>
@@ -88,7 +99,7 @@ namespace Museums.Api.Controllers
 
             id = _unitOfWorkBl.Scrapy.Process();
 
-            return Accepted($"Api/Museums/UpdateFromSic/{id}/status",new { Id = id });
+            return Accepted($"Api/Museums/UpdateFromSic/{id}/status", new { Id = id });
         }
 
         /// <summary>
@@ -111,7 +122,7 @@ namespace Museums.Api.Controllers
             return Created("https://http.cat/201", item);
         }
 
-         /// <summary>
+        /// <summary>
         /// Cancel the update
         /// </summary>
         /// <param name="id"> id to cancel</param>

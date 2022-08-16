@@ -15,6 +15,8 @@ namespace Museums.Core.Interfaces
 
         Task<List<MuseumEntity>> GetAsync();
 
+        Task<List<MuseumEntity>> GetAsync(Pager pager);
+
         Task<string> AddAsync(MuseumEntity entity);
 
         Task<MuseumEntity> GetAsync(int museumId);

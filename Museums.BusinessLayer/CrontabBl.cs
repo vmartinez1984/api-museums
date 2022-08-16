@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using AutoMapper;
 using Museums.Core.Dtos;
 using Museums.Core.Entities;

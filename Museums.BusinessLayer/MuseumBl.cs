@@ -51,6 +51,20 @@ public class MuseumBl : IMuseum
         return item;
     }
 
+    public async Task<MuseumPagerDto> GetAsync(PagerDto pagerDto)
+    {
+        MuseumPagerDto museumPager;
+        List<MuseumEntity> entities;
+        Pager pager;
+
+        pager = _mapper.Map<Pager>(pagerDto);
+        entities = await _repository.Museum.GetAsync(pager);
+        museumPager = _mapper.Map<MuseumPagerDto>(pager);
+        museumPager.ListMuseums = _mapper.Map<List<MuseumDto>>(entities);
+
+        return museumPager;
+    }
+
     public void Update(MuseumDto item)
     {
         MuseumEntity entity;

@@ -14,6 +14,9 @@ namespace Museums.Core.Mappers
 
             CreateMap<CrontabDtoIn, CrontabEntity>();
             CreateMap<CrontabEntity, CrontabDto>();
+
+            CreateMap<PagerDto, Pager>();
+            CreateMap<Pager, MuseumPagerDto>();
         }
     }
 }
