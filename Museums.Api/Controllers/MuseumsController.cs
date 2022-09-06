@@ -1,3 +1,4 @@
+using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using Museums.Api.Helpers;
 using Museums.Api.Models;
@@ -12,24 +13,29 @@ namespace Museums.Api.Controllers
     public class MuseumsController : ControllerBase
     {
         private IUnitOfWorkBl _unitOfWorkBl;
-        private ScrapService _scrapService;
+        //private ScrapService _scrapService;
         private ILogger<MuseumsController> _logger;
+
+        private IBackgroundJobClient _backgroundJobClient;
 
         public MuseumsController(
             IUnitOfWorkBl unitOfWorkBl
-            , ScrapService scrapService
+            //, ScrapService scrapService
             , ILogger<MuseumsController> logger
+            , IBackgroundJobClient backgroundJobClient
         )
         {
             _unitOfWorkBl = unitOfWorkBl;
-            _scrapService = scrapService;
+            //_scrapService = scrapService;
             _logger = logger;
+            _backgroundJobClient = backgroundJobClient;
         }
 
         /// <summary>
-        /// Get list of museums from CDMX
+        /// Get list of museums from CDMX paginated, total records and total records filtered in the header /
+        /// Obtien una lista de museos de la CDMX paginada, total de registros y total de registros filtrados en el header
         /// </summary>
-        /// <response code="200">Returns list of museums</response>
+        /// <response code="200">Returns list of museums/Regresa una lista de museos</response>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [Produces("application/json")]
@@ -79,11 +85,22 @@ namespace Museums.Api.Controllers
         [Produces("application/json")]
         public IActionResult Update(string id)
         {
-            string _id;
+            // string _id;
 
-            _id = _unitOfWorkBl.Scrapy.Process(id);
+            // _id = _unitOfWorkBl.Scrapy.Process(id);
+            LogDto log;
 
-            return Accepted($"Api/Museums/UpdateFromSic/{_id}/status", new { Id = _id });
+            log = new LogDto
+            {
+                DateExecution = DateTime.Now,
+                MuseumIdInProcess = id
+            };
+            log.Id = _unitOfWorkBl.Log.Add(log);
+            _backgroundJobClient.Enqueue(()=>
+                _unitOfWorkBl.Scrapy.UpdateMuseums(log)
+            );  
+
+            return Accepted($"Api/Museums/UpdateFromSic/{log.Id}/status", new { Id = log.Id });
         }
 
         /// <summary>
@@ -93,7 +110,7 @@ namespace Museums.Api.Controllers
         [ProducesResponseType(typeof(ResponseId), StatusCodes.Status202Accepted)]
         [Produces("application/json")]
         [HttpGet("UpdateFromSic")]
-        public async Task<IActionResult> Update()
+        public IActionResult Update()
         {
             string id;
 

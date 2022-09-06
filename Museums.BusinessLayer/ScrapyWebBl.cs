@@ -1,5 +1,7 @@
 using System.ComponentModel;
+using AutoMapper;
 using Microsoft.Extensions.Logging;
+using Museums.Core.Dtos;
 using Museums.Core.Entities;
 using Museums.Core.Interfaces;
 using Museums.Service.Scraping;
@@ -11,17 +13,20 @@ namespace Museums.BusinessLayer
         private BackgroundWorker _backgroundWorker;
         private ScrapService _scrapService;
         private ILogger<ScrapyBl> _logger;
+        private readonly IMapper _mapper;
         private IRepository _repository;
 
         public ScrapyBl(
             IRepository repository
             , ScrapService scrapService
             , ILogger<ScrapyBl> logger
+            , IMapper mapper
         )
         {
             _repository = repository;
             _scrapService = scrapService;
             _logger = logger;
+            _mapper = mapper;
             _backgroundWorker = new BackgroundWorker();
             _backgroundWorker.DoWork += DoWork;
             _backgroundWorker.RunWorkerCompleted += RunWorkerCompleted;
@@ -29,12 +34,32 @@ namespace Museums.BusinessLayer
             _backgroundWorker.WorkerReportsProgress = true;
             _backgroundWorker.WorkerSupportsCancellation = true;
         }
+
         public string Process()
         {
             LogEntity logEntity;
 
             logEntity = new LogEntity();
             logEntity.DateExecution = DateTime.Now;
+            _repository.Log.Add(logEntity);
+            _backgroundWorker.RunWorkerAsync(logEntity);
+
+            return logEntity.Id;
+        }
+
+        /// <summary>
+        /// Solo actualiza un museo
+        /// </summary>
+        /// <param name="id">Id del museo</param>
+        /// <returns></returns>
+        public string Process(string id)
+        {
+            LogEntity logEntity;
+
+            //logEntity = _repository.Log.GetByMuseumIdAsync(id);
+            logEntity = new LogEntity();
+            logEntity.DateExecution = DateTime.Now;
+            logEntity.MuseumIdInProcess = id;
             _repository.Log.Add(logEntity);
             _backgroundWorker.RunWorkerAsync(logEntity);
 
@@ -51,10 +76,19 @@ namespace Museums.BusinessLayer
         private void DoWork(object sender, DoWorkEventArgs e)
         {
             _logger.LogInformation("Inicia proceso de actualización");
-            List<MuseumEntity> entities;
             LogEntity logEntity;
+            //List<MuseumEntity> entities;
 
             logEntity = e.Argument as LogEntity;
+            //entities = UpdateMuseums(logEntity);
+
+            UpdateMuseums(logEntity);
+        }
+
+        private List<MuseumEntity> UpdateMuseums(LogEntity logEntity)
+        {
+            List<MuseumEntity> entities;
+
             entities = GetListMuseums(logEntity);
             logEntity.TotalRecords = entities.Count();
             _repository.Log.Update(logEntity);
@@ -65,7 +99,7 @@ namespace Museums.BusinessLayer
                 {
                     MuseumEntity museum;
 
-                    museum = _repository.Museum.GetAsync(entity.MuseoId).Result;                    
+                    museum = _repository.Museum.GetAsync(entity.MuseoId).Result;
                     //if (entity.FechaMod is null || ((DateTime)museum.FechaMod).Date != ((DateTime)entity.FechaMod).Date)
                     //{
                     try
@@ -93,6 +127,49 @@ namespace Museums.BusinessLayer
             _logger.LogInformation($"{logEntity.NumberOfUpdates} Updates {logEntity.NumberErrors} erros");
             logEntity.DateEndExecution = DateTime.Now;
             _repository.Log.Update(logEntity);
+
+            return entities;
+        }
+
+        public void UpdateMuseums(LogDto logDto)
+        {
+            Task.Delay(5000);
+            _logger.LogInformation("Inicia proceso de actualización");
+            LogEntity logEntity;
+            //List<MuseumEntity> listMuseums;
+
+            VerifyLog(logDto);
+            logEntity = _mapper.Map<LogEntity>(logDto);
+
+            UpdateMuseums(logEntity);
+        }
+
+        public async Task UpdateMuseumsAsync(LogDto logDto)
+        {
+            await Task.Delay(5000);
+            _logger.LogInformation("Inicia proceso de actualización");
+            LogEntity logEntity;
+            //List<MuseumEntity> listMuseums;
+
+            VerifyLog(logDto);
+            logEntity = _mapper.Map<LogEntity>(logDto);
+
+            UpdateMuseums(logEntity);
+        }
+
+        /// <summary>
+        /// The log must be registered, otherwise it is registered
+        /// </summary>
+        /// <param name="logDto"></param>
+        private void VerifyLog(LogDto logDto)
+        {
+            if (string.IsNullOrEmpty(logDto.Id))
+            {
+                logDto.Id = _repository.Log.Add(new LogEntity
+                {
+                    MuseumIdInProcess = logDto.MuseumIdInProcess
+                });
+            }
         }
 
         private List<MuseumEntity> GetListMuseums(LogEntity logEntity)
@@ -133,17 +210,5 @@ namespace Museums.BusinessLayer
             return percentage;
         }
 
-        public string Process(string id)
-        {
-            LogEntity logEntity;
-
-            logEntity = new LogEntity();
-            logEntity.DateExecution = DateTime.Now;
-            logEntity.MuseumIdInProcess = id;
-            _repository.Log.Add(logEntity);
-            _backgroundWorker.RunWorkerAsync(logEntity);
-
-            return logEntity.Id;
-        }
     }
 }

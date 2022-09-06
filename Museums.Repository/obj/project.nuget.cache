@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "57tbBri9SuXd2DSwFA5IAEqfHVUtWrDCaSrDo26w15G4IbHVsUUCKK68OqBcheVb9bt2MBJJIZjwy0+92n9Uxw==",
+  "dgSpecHash": "WmFJjNX4lDlLq4IDUsaWu/BJ+2NUiYvG5joOFVc1gNhwyGxvVe0XhSq4U7HDKltLeBsYcxbBVAL8/EsZhUsugg==",
   "success": true,
-  "projectFilePath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj",
+  "projectFilePath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj",
   "expectedPackageFiles": [
     "/home/vmartinez/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
@@ -21,9 +21,7 @@
     "/home/vmartinez/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/microsoft.netcore.app.ref/6.0.7/microsoft.netcore.app.ref.6.0.7.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.7/microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512"
+    "/home/vmartinez/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

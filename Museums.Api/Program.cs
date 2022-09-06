@@ -1,5 +1,8 @@
 using System.Reflection;
 using AutoMapper;
+using Hangfire;
+using Hangfire.SqlServer;
+using Helpers;
 using Microsoft.OpenApi.Models;
 using Museums.Api.Helpers;
 using Museums.BusinessLayer;
@@ -45,7 +48,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
-        Version = "v1",
+        Version = "v1.1",
         Title = "Api de museos de la CDMX",
         Description = @"Es una ApiRest que muestra información de museos de la ciudad de México, con el objetivo 
         de probar los workerservices.
@@ -63,16 +66,30 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
-
+var connectionString = builder.Configuration.GetConnectionString("HangfireConnection");
+builder.Services.AddHangfire(configuration => configuration
+        .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+        .UseSimpleAssemblyNameTypeSerializer()
+        .UseRecommendedSerializerSettings()
+        .UseSqlServerStorage(connectionString, new SqlServerStorageOptions
+        {
+            CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
+            SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+            QueuePollInterval = TimeSpan.Zero,
+            UseRecommendedIsolationLevel = true,
+            DisableGlobalLocks = true
+        }))
+        ;
+builder.Services.AddHangfireServer();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+app.UseSwagger();
+app.UseSwaggerUI();
+//}
 
 app.UseMiddleware<HeadersMiddleware>();
 app.UseMiddleware<ExampleMiddleware>();
@@ -83,5 +100,23 @@ app.UseAuthorization();
 
 app.MapControllers();
 //app.UseSerilogRequestLogging();
+//app.UseHangfireDashboard();
+app.UseHangfireDashboard("/hangfire", new DashboardOptions
+{
+    DashboardTitle = "Sample Jobs",
+    Authorization = new[]
+    {
+        new  HangfireAuthorizationFilter("admin")
+    }
+});
+
+
+RecurringJob.AddOrUpdate<ScrapyBl>(
+    "Update Museum with id = 15",
+    //() => Console.WriteLine("Dummy-> Museo actualizado"),
+    //job => job.UpdateMuseumsAsync(new Museums.Core.Dtos.LogDto { MuseumIdInProcess = "15" }),
+    job => job.Process("15"),
+    Cron.Daily()
+);
 
 app.Run();

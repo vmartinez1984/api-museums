@@ -20,9 +20,10 @@
         </member>
         <member name="M:Museums.Api.Controllers.MuseumsController.Get(Museums.Core.Dtos.PagerDtoIn)">
             <summary>
-            Get list of museums from CDMX
+            Get list of museums from CDMX paginated, total records and total records filtered in the header /
+            Obtien una lista de museos de la CDMX paginada, total de registros y total de registros filtrados en el header
             </summary>
-            <response code="200">Returns list of museums</response>
+            <response code="200">Returns list of museums/Regresa una lista de museos</response>
         </member>
         <member name="M:Museums.Api.Controllers.MuseumsController.Get(System.String)">
             <summary>

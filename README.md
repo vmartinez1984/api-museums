@@ -20,3 +20,12 @@ https://samabraham.net/2020/04/08/net-core-logging-with-mongodb-and-serilog/
       },
       
       https://www.campusmvp.es/recursos/post/como-manejar-trazas-en-net-core-con-serilog.aspx
+
+# Recurring jobs
+
+https://mazeez.dev/posts/background-job-scheduling-using-hangfire
+
+https://ruhollah-jafari.medium.com/learn-how-to-schedule-tasks-with-hangfire-in-asp-net-core-4e9d157d58f5
+
+https://procodeguide.com/programming/hangfire-in-aspnet-core-schedule-jobs/
+

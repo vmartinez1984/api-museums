@@ -16,6 +16,18 @@ namespace Museums.Core.Interfaces
     {
         string Process();
         string Process(string id);
+
+        /// <summary>
+        /// Init the process for updates of musuems
+        /// </summary>
+        /// <param name="log"></param>
+        void UpdateMuseums(LogDto log);
+
+        /// <summary>
+        /// Init the process for updates of musuems
+        /// </summary>
+        /// <param name="log"></param>
+        Task UpdateMuseumsAsync(LogDto log);
     }
 
     public interface ILogBl

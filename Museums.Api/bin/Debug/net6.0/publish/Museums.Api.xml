@@ -4,18 +4,65 @@
         <name>Museums.Api</name>
     </assembly>
     <members>
-        <member name="M:Museums.Api.Controllers.MuseumsController.Get">
+        <member name="M:Museums.Api.Controllers.CrontabsController.Get">
             <summary>
-            Get list of museums from CDMX
+            Get list of Crontabs
             </summary>
-            <response code="200">Returns list of museums</response>
+            <returns></returns>
+            <response code="200">Return list crontabs</response>
         </member>
-        <member name="M:Museums.Api.Controllers.MuseumsController.Get(System.Int32)">
+        <member name="M:Museums.Api.Controllers.CrontabsController.Post(Museums.Core.Dtos.CrontabDtoIn)">
             <summary>
-            Get museum by museumId from CDMX
+            Get list of Crontabs
+            </summary>
+            <returns></returns>
+            <response code="201">Return id</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.Get(Museums.Core.Dtos.PagerDtoIn)">
+            <summary>
+            Get list of museums from CDMX paginated, total records and total records filtered in the header /
+            Obtien una lista de museos de la CDMX paginada, total de registros y total de registros filtrados en el header
+            </summary>
+            <response code="200">Returns list of museums/Regresa una lista de museos</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.Get(System.String)">
+            <summary>
+            Get museum by museumId or id from CDMX
             </summary>
             <response code="200">Museum</response>
             <response code="404">Museum no found</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.Update(System.String)">
+            <summary>
+            Update museum by Id or museumId from SIC
+            </summary>
+            <response code="202">Update is init</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.Update">
+            <summary>
+            Update all museums from SIC
+            </summary>
+            <response code="202">The update is init</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.GetStatus(System.String)">
+            <summary>
+            Get status of update
+            </summary>
+            <param name="id"> id to search</param>
+            <response code="201">Update finish</response>
+            <response code="102">Update in process</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.CancelUpdate(System.String)">
+            <summary>
+            Cancel the update
+            </summary>
+            <param name="id"> id to cancel</param>
+            <response code="200">Update canceled</response>
+        </member>
+        <member name="T:Museums.Api.Helpers.HeadersMiddleware">
+            <summary>
+            Add customer headers, author and source info
+            </summary>
         </member>
     </members>
 </doc>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.Api/Museums.Api.csproj": {}
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj": {}
   },
   "projects": {
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.Api/Museums.Api.csproj": {
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Api/Museums.Api.csproj",
+        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj",
         "projectName": "Museums.Api",
-        "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Api/Museums.Api.csproj",
+        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj",
         "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Api/obj/",
+        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vmartinez/.nuget/NuGet/NuGet.Config"
@@ -26,17 +26,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj"
               },
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
               },
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj"
               },
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
               }
             }
           }
@@ -51,6 +51,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.31, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.17.1, )"
@@ -90,24 +94,11 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -116,18 +107,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
+        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
         "projectName": "Museums.BusinessLayer",
-        "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
+        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
         "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.BusinessLayer/obj/",
+        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vmartinez/.nuget/NuGet/NuGet.Config"
@@ -142,11 +133,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
               },
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
               }
             }
           }
@@ -166,37 +157,28 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj": {
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj",
+        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj",
         "projectName": "Museums.Core",
-        "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj",
+        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj",
         "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/obj/",
+        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vmartinez/.nuget/NuGet/NuGet.Config"
@@ -242,37 +224,28 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj": {
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj",
+        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj",
         "projectName": "Museums.Repository",
-        "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/Museums.Repository.csproj",
+        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj",
         "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Repository/obj/",
+        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vmartinez/.nuget/NuGet/NuGet.Config"
@@ -287,8 +260,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
               }
             }
           }
@@ -318,37 +291,28 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
+    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
+        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
         "projectName": "Museums.Service.Scraping",
-        "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
+        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
         "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/obj/",
+        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vmartinez/.nuget/NuGet/NuGet.Config"
@@ -363,8 +327,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Core/Museums.Core.csproj"
+              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
+                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
               }
             }
           }
@@ -402,26 +366,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.7, 6.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

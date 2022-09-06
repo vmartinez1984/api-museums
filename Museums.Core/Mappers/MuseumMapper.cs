@@ -17,6 +17,8 @@ namespace Museums.Core.Mappers
 
             CreateMap<PagerDto, Pager>();
             CreateMap<Pager, MuseumPagerDto>();
+
+            CreateMap<LogDto, LogEntity>();
         }
     }
 }

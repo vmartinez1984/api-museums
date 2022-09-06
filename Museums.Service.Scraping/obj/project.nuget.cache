@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K70wyKbe6wJDTZ8/KM7YziZeFtDllFrP/UZWU3YmGoiLp9G+XTdOzfccyYbxEvjBF5blrDu/JJy/6zNZ5MvOgQ==",
+  "dgSpecHash": "KFhG0NSEHitcDfi5BSPrq4uVhk+SQvIqof2cNOiGV/tN8WeYZ7ujTI0/TpZf81DBNFF8SOTnTEBvwXAQNSMMFA==",
   "success": true,
-  "projectFilePath": "/media/vmartinez/X-Files1/Documents/Museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
+  "projectFilePath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
   "expectedPackageFiles": [
     "/home/vmartinez/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
@@ -107,9 +107,7 @@
     "/home/vmartinez/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/home/vmartinez/.nuget/packages/system.xml.xpath/4.3.0/system.xml.xpath.4.3.0.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/microsoft.netcore.app.ref/6.0.7/microsoft.netcore.app.ref.6.0.7.nupkg.sha512",
-    "/home/vmartinez/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.7/microsoft.aspnetcore.app.ref.6.0.7.nupkg.sha512"
+    "/home/vmartinez/.nuget/packages/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
