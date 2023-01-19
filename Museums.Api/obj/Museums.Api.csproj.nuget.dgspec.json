@@ -1,42 +1,52 @@
 {
   "format": 1,
   "restore": {
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj": {}
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Api\\Museums.Api.csproj": {}
   },
   "projects": {
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj": {
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Api\\Museums.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj",
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Api\\Museums.Api.csproj",
         "projectName": "Museums.Api",
-        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/Museums.Api.csproj",
-        "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Api/obj/",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Api\\Museums.Api.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vmartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\Museums.BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\Museums.BusinessLayer.csproj"
               },
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj"
               },
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\Museums.Repository.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\Museums.Repository.csproj"
               },
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj"
+              },
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\VMtz.RequestInspector.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\VMtz.RequestInspector.csproj"
               }
             }
           }
@@ -107,37 +117,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj": {
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\Museums.BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\Museums.BusinessLayer.csproj",
         "projectName": "Museums.BusinessLayer",
-        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/Museums.BusinessLayer.csproj",
-        "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.BusinessLayer/obj/",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\Museums.BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vmartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj"
               },
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj"
               }
             }
           }
@@ -167,26 +184,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj",
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj",
         "projectName": "Museums.Core",
-        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj",
-        "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/obj/",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vmartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -234,34 +258,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj": {
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\Museums.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\Museums.Repository.csproj",
         "projectName": "Museums.Repository",
-        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/Museums.Repository.csproj",
-        "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Repository/obj/",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\Museums.Repository.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vmartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj"
               }
             }
           }
@@ -301,34 +332,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj": {
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj",
         "projectName": "Museums.Service.Scraping",
-        "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/Museums.Service.Scraping.csproj",
-        "packagesPath": "/home/vmartinez/.nuget/packages/",
-        "outputPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Service.Scraping/obj/",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\Museums.Service.Scraping.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Service.Scraping\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/vmartinez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj": {
-                "projectPath": "/home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/Museums.Core.csproj"
+              "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj": {
+                "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Museums.Core\\Museums.Core.csproj"
               }
             }
           }
@@ -376,7 +414,89 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\VMtz.RequestInspector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\VMtz.RequestInspector.csproj",
+        "projectName": "VMtz.RequestInspector",
+        "projectPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\VMtz.RequestInspector.csproj",
+        "packagesPath": "C:\\Users\\vmartinez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vmartinez\\source\\repos\\vmartinez1984\\api-museums\\Vmartinez.RequestInspector\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vmartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

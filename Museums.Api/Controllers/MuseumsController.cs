@@ -16,19 +16,19 @@ namespace Museums.Api.Controllers
         //private ScrapService _scrapService;
         private ILogger<MuseumsController> _logger;
 
-        private IBackgroundJobClient _backgroundJobClient;
+        //private IBackgroundJobClient _backgroundJobClient;
 
         public MuseumsController(
             IUnitOfWorkBl unitOfWorkBl
             //, ScrapService scrapService
             , ILogger<MuseumsController> logger
-            , IBackgroundJobClient backgroundJobClient
+            //, IBackgroundJobClient backgroundJobClient
         )
         {
             _unitOfWorkBl = unitOfWorkBl;
             //_scrapService = scrapService;
             _logger = logger;
-            _backgroundJobClient = backgroundJobClient;
+            //_backgroundJobClient = backgroundJobClient;
         }
 
         /// <summary>
@@ -96,9 +96,9 @@ namespace Museums.Api.Controllers
                 MuseumIdInProcess = id
             };
             log.Id = _unitOfWorkBl.Log.Add(log);
-            _backgroundJobClient.Enqueue(()=>
-                _unitOfWorkBl.Scrapy.UpdateMuseums(log)
-            );  
+            //_backgroundJobClient.Enqueue(()=>
+            _unitOfWorkBl.Scrapy.UpdateMuseums(log);
+            //);  
 
             return Accepted($"Api/Museums/UpdateFromSic/{log.Id}/status", new { Id = log.Id });
         }

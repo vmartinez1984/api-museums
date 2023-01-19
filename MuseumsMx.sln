@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88A3BFBD-9D1C-4472-8E11-62EBB9BE8A23}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Api", "Museums.Api\Museums.Api.csproj", "{95EAA444-2304-4D17-80E0-DE6124FFDE79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.BusinessLayer", "Museums.BusinessLayer\Museums.BusinessLayer.csproj", "{2C7BA0A7-C367-44F6-9314-4682C0643AFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Core", "Museums.Core\Museums.Core.csproj", "{0C11DF7F-2611-495F-8E05-79F68C46BD59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Repository", "Museums.Repository\Museums.Repository.csproj", "{A75E64F6-4283-4FB6-AC12-A7C4B00BD94C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Service.Scraping", "Museums.Service.Scraping\Museums.Service.Scraping.csproj", "{E6381043-4747-4835-8640-18724CE8609B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vmartinez.RequestInspector", "Vmartinez.RequestInspector\Vmartinez.RequestInspector.csproj", "{AD429FDE-E2C1-4267-8208-E23928DCE1C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95EAA444-2304-4D17-80E0-DE6124FFDE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95EAA444-2304-4D17-80E0-DE6124FFDE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95EAA444-2304-4D17-80E0-DE6124FFDE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95EAA444-2304-4D17-80E0-DE6124FFDE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7BA0A7-C367-44F6-9314-4682C0643AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7BA0A7-C367-44F6-9314-4682C0643AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7BA0A7-C367-44F6-9314-4682C0643AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7BA0A7-C367-44F6-9314-4682C0643AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C11DF7F-2611-495F-8E05-79F68C46BD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C11DF7F-2611-495F-8E05-79F68C46BD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C11DF7F-2611-495F-8E05-79F68C46BD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C11DF7F-2611-495F-8E05-79F68C46BD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75E64F6-4283-4FB6-AC12-A7C4B00BD94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75E64F6-4283-4FB6-AC12-A7C4B00BD94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75E64F6-4283-4FB6-AC12-A7C4B00BD94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75E64F6-4283-4FB6-AC12-A7C4B00BD94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6381043-4747-4835-8640-18724CE8609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6381043-4747-4835-8640-18724CE8609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6381043-4747-4835-8640-18724CE8609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6381043-4747-4835-8640-18724CE8609B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C787B8E3-F1B0-4271-9463-62EBCE2ED9EF}
+	EndGlobalSection
+EndGlobal

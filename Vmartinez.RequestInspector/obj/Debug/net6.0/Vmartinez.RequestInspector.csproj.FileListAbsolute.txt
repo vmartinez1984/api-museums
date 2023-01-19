@@ -1,0 +1,12 @@
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\Vmartinez.RequestInspector.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\Vmartinez.RequestInspector.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\Vmartinez.RequestInspector.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.csproj.AssemblyReference.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\refint\Vmartinez.RequestInspector.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\Vmartinez.RequestInspector.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\ref\Vmartinez.RequestInspector.dll

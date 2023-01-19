@@ -34,3 +34,15 @@
 /home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/obj/Debug/net6.0/refint/Museums.Core.dll
 /home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/obj/Debug/net6.0/Museums.Core.pdb
 /home/vmartinez/Documents/Source/CSharp/api-museums/Museums.Core/obj/Debug/net6.0/ref/Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\bin\Debug\net6.0\Museums.Core.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\bin\Debug\net6.0\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\bin\Debug\net6.0\Museums.Core.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.csproj.AssemblyReference.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\refint\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\Museums.Core.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Core\obj\Debug\net6.0\ref\Museums.Core.dll
