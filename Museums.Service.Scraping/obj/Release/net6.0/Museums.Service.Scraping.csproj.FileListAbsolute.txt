@@ -1,0 +1,15 @@
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\bin\Release\net6.0\Museums.Service.Scraping.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\bin\Release\net6.0\Museums.Service.Scraping.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\bin\Release\net6.0\Museums.Service.Scraping.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\bin\Release\net6.0\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\bin\Release\net6.0\Museums.Core.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.csproj.AssemblyReference.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.csproj.CopyComplete
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\refint\Museums.Service.Scraping.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\Museums.Service.Scraping.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Scraping\obj\Release\net6.0\ref\Museums.Service.Scraping.dll

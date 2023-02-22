@@ -25,6 +25,6 @@
     <ProjectReference Include="..\Museums.Repository\Museums.Repository.csproj" />
     <ProjectReference Include="..\Museums.BusinessLayer\Museums.BusinessLayer.csproj" />
     <ProjectReference Include="..\Museums.Service.Scraping\Museums.Service.Scraping.csproj" />
-    <ProjectReference Include="..\Vmartinez.RequestInspector\Vmartinez.RequestInspector.csproj" />
+    <ProjectReference Include="..\Vmartinez.RequestInspector\VMtz.RequestInspector.csproj" />    
   </ItemGroup>
 </Project>

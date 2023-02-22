@@ -7,6 +7,7 @@ namespace Vmartinez.RequestInspector.Entities
         [Key]
         public int Id { get; set; }
 
+        [StringLength(255)]
         public string Application { get; set; }
 
         public string Path { get; set; }

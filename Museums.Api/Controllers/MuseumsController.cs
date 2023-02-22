@@ -39,7 +39,7 @@ namespace Museums.Api.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [Produces("application/json")]
-        public async Task<IEnumerable<MuseumDto>> Get([FromQuery] PagerDtoIn pagerIn)
+        public async Task<IActionResult> Get([FromQuery] PagerDtoIn pagerIn)
         {
             PagerDto pager;
 
@@ -53,7 +53,7 @@ namespace Museums.Api.Controllers
             this.HttpContext.AddHeaderTotalRecords(museumPager.TotalRecords);
             this.HttpContext.AddHeaderTotalRecordsFiltered(museumPager.TotalRecordsFiltered);
 
-            return museumPager.ListMuseums;
+            return Ok(museumPager);
         }
 
         /// <summary>

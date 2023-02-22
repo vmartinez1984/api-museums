@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\Museos</_PublishTargetUrl>
+    <History>True|2023-02-22T00:13:24.9538150Z;False|2023-02-21T18:12:47.8999238-06:00;True|2023-02-21T14:13:14.7136942-06:00;True|2023-02-21T13:59:27.6551563-06:00;True|2023-02-21T13:40:42.3557678-06:00;True|2023-02-21T12:49:30.5839532-06:00;False|2023-02-21T12:49:20.2025351-06:00;True|2023-02-21T12:06:40.8561378-06:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

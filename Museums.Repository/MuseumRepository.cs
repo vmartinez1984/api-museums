@@ -51,24 +51,40 @@ namespace Museums.Repository
 
         public async Task<List<MuseumEntity>> GetAsync(Pager pager)
         {
-            List<MuseumEntity> entities;
-            FilterDefinition<MuseumEntity> filter;
+            try
+            {
+                List<MuseumEntity> entities;
+                FilterDefinition<MuseumEntity> filter;
 
-            if (string.IsNullOrEmpty(pager.Search))
-                filter = Builders<MuseumEntity>.Filter.Where(_ => true);
-            else
-                filter = Builders<MuseumEntity>.Filter.Where(x => x.MuseoNombre.ToLower().Contains(pager.Search.ToLower()));
+                if (string.IsNullOrEmpty(pager.Search))
+                    filter = Builders<MuseumEntity>.Filter.Where(_ => true);
+                else
+                {
+                    pager.Search = pager.Search.ToLower();
+                    filter = Builders<MuseumEntity>.Filter.Where(
+                        x => x.MuseoNombre.ToLower().Contains(pager.Search)
+                        || x.MuseoTematicaN1.ToLower().Contains(pager.Search)
+                        || x.NomMun.ToLower().Contains(pager.Search)
+                        || x.HoariosYCostos.ToLower().Contains(pager.Search)                        
+                    );
+                }
 
 
-            entities = await _collection.Find(filter)
-                .Sort("{MuseoId:1}")
-                .Skip((pager.PageCurrent - 1) * pager.RecordsPerPage)
-                .Limit(pager.RecordsPerPage)
-                .ToListAsync();
-            pager.TotalRecordsFiltered = entities.Count();
-            pager.TotalRecords = (int)await _collection.CountDocumentsAsync(new BsonDocument());
+                entities = await _collection.Find(filter)
+                    .Sort("{MuseoId:1}")
+                    .Skip((pager.PageCurrent - 1) * pager.RecordsPerPage)
+                    .Limit(pager.RecordsPerPage)
+                    .ToListAsync();
+                pager.TotalRecordsFiltered = (int)await _collection.Find(filter).Sort("{MuseoId:1}").CountAsync();
+                pager.TotalRecords = (int)await _collection.CountDocumentsAsync(new BsonDocument());
 
-            return entities;
+                return entities;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public async Task<MuseumEntity> GetAsync(int id)

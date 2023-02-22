@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Museums.Service.Scraping"
   ],
+  "SelectedNode": "\\Museums.Service.Scraping\\ScrapService.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,17 @@
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.BusinessLayer.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.BusinessLayer.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.BusinessLayer.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.Service.Scraping.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.Core.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\bin\Release\net6.0\Museums.Service.Scraping.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.csproj.CopyComplete
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\refint\Museums.BusinessLayer.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\Museums.BusinessLayer.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.BusinessLayer\obj\Release\net6.0\ref\Museums.BusinessLayer.dll

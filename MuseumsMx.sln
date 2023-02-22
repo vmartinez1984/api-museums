@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Repository", "Museu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Service.Scraping", "Museums.Service.Scraping\Museums.Service.Scraping.csproj", "{E6381043-4747-4835-8640-18724CE8609B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vmartinez.RequestInspector", "Vmartinez.RequestInspector\Vmartinez.RequestInspector.csproj", "{AD429FDE-E2C1-4267-8208-E23928DCE1C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VMtz.RequestInspector", "Vmartinez.RequestInspector\VMtz.RequestInspector.csproj", "{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{E6381043-4747-4835-8640-18724CE8609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6381043-4747-4835-8640-18724CE8609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6381043-4747-4835-8640-18724CE8609B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD429FDE-E2C1-4267-8208-E23928DCE1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

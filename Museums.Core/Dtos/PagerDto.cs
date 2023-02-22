@@ -11,7 +11,7 @@ namespace Museums.Core.Dtos
         {
             get
             {
-                return (int)Math.Ceiling((double)TotalRecords / RecordsPerPage);
+                return (int)Math.Ceiling((double)TotalRecordsFiltered / RecordsPerPage);
             }
         }
 

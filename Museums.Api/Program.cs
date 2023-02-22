@@ -68,6 +68,8 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
+builder.Services.AddCors(options => options.AddPolicy("AllowWebApp", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+
 //var connectionString = builder.Configuration.GetConnectionString("HangfireConnection");
 //builder.Services.AddHangfire(configuration => configuration
 //        .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
@@ -93,6 +95,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 //}
+app.UseCors("AllowWebApp");
 
 app.UseMiddleware<HeadersMiddleware>();
 app.UseMiddleware<RequestInspectorMiddleware>();
