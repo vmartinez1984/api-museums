@@ -38,9 +38,15 @@
             </summary>
             <response code="202">Update is init</response>
         </member>
-        <member name="M:Museums.Api.Controllers.MuseumsController.Update">
+        <member name="M:Museums.Api.Controllers.MuseumsController.UpdateAll">
             <summary>
             Update all museums from SIC
+            </summary>
+            <response code="202">The update is init</response>
+        </member>
+        <member name="M:Museums.Api.Controllers.MuseumsController.Scraping">
+            <summary>
+            Get museums from SIC
             </summary>
             <response code="202">The update is init</response>
         </member>

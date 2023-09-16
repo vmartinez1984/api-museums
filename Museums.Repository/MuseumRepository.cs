@@ -26,7 +26,17 @@ namespace Museums.Repository
         {
             await _collection.InsertOneAsync(entity);
 
-            return entity.Id;
+            return entity.Id.ToString();
+        }
+
+        public Task DeleteAsync(int museoId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<MuseumEntity>> GetAllAsync()
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<List<MuseumEntity>> GetAsync()
@@ -100,7 +110,7 @@ namespace Museums.Repository
         {
             MuseumEntity entity;
 
-            entity = await _collection.Find(x => x.Id == id).FirstOrDefaultAsync();
+            entity = await _collection.Find(x => x.Id.ToString() == id).FirstOrDefaultAsync();
 
             return entity;
         }

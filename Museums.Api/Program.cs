@@ -1,18 +1,15 @@
 using System.Reflection;
 using AutoMapper;
-using Hangfire;
-using Hangfire.SqlServer;
-using Helpers;
 using Microsoft.OpenApi.Models;
 using Museums.Api.Helpers;
 using Museums.BusinessLayer;
-using Museums.Core.Interfaces;
 using Museums.Core.Mappers;
-using Museums.Repository;
 using Museums.Service.Scraping;
 using Serilog;
 using Vmartinez.RequestInspector.Extensores;
 using VMtz.RequestInspector;
+using Museums.Repository.Sql.Helpers;
+using System.Net.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 //Serilog
@@ -22,21 +19,20 @@ builder.Host.UseSerilog((context, config) =>
 });
 
 builder.Services.AddControllers();
-// Add services to the container.
 builder.Services.AddScoped<ScrapService>();
-builder.Services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
-builder.Services.AddScoped<IMuseumRepository, MuseumRepository>();
-builder.Services.AddScoped<ILogRepository, LogRepository>();
-builder.Services.AddScoped<ICrontabRepository, CrontabRepository>();
-builder.Services.AddScoped<IRepository, Repository>();
-builder.Services.AddScoped<IMuseum, MuseumBl>();
-builder.Services.AddScoped<ICrontabBl, CrontabBl>();
-builder.Services.AddScoped<ILogBl, LogBl>();
-builder.Services.AddScoped<IScrapyBl, ScrapyBl>();
-builder.Services.AddScoped<IUnitOfWorkBl, UnitOfWorkBl>();
+// Add services to the container.
+builder.Services.AddRepositorySql();
+//bussines LAyer
+builder.Services.AddBl();
 //services
 builder.Services.AddHostedService<WorkerService>();
-
+//HttpClientHandler httpClientHandler = new HttpClientHandler()
+//{
+//    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
+//};
+//builder.Services.AddHttpClient("ignoreSSL", c =>
+//{ }).ConfigurePrimaryHttpMessageHandler(h => httpClientHandler);
+builder.Services.AddHttpClient();
 //Mappers
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {
@@ -68,23 +64,19 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
 
-builder.Services.AddCors(options => options.AddPolicy("AllowWebApp", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+builder.Services.AddCors(options =>
+{
+    string frontEndUrl;
 
-//var connectionString = builder.Configuration.GetConnectionString("HangfireConnection");
-//builder.Services.AddHangfire(configuration => configuration
-//        .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-//        .UseSimpleAssemblyNameTypeSerializer()
-//        .UseRecommendedSerializerSettings()
-//        .UseSqlServerStorage(connectionString, new SqlServerStorageOptions
-//        {
-//            CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-//            SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-//            QueuePollInterval = TimeSpan.Zero,
-//            UseRecommendedIsolationLevel = true,
-//            DisableGlobalLocks = true
-//        }))
-//        ;
-//builder.Services.AddHangfireServer();
+    frontEndUrl = builder.Configuration.GetSection("FrontEndUrl").Value;
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins(frontEndUrl)
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .WithExposedHeaders("*");
+    });
+});
 
 builder.Services.AddRequestInpector();
 var app = builder.Build();
@@ -95,7 +87,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 //}
-app.UseCors("AllowWebApp");
+app.UseCors();
 
 app.UseMiddleware<HeadersMiddleware>();
 app.UseMiddleware<RequestInspectorMiddleware>();
@@ -105,24 +97,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-//app.UseSerilogRequestLogging();
-//app.UseHangfireDashboard();
-//app.UseHangfireDashboard("/hangfire", new DashboardOptions
-//{
-//    DashboardTitle = "Sample Jobs",
-//    Authorization = new[]
-//    {
-//        new  HangfireAuthorizationFilter("admin")
-//    }
-//});
-
-
-//RecurringJob.AddOrUpdate<ScrapyBl>(
-//    "Update Museum with id = 15",
-//    //() => Console.WriteLine("Dummy-> Museo actualizado"),
-//    //job => job.UpdateMuseumsAsync(new Museums.Core.Dtos.LogDto { MuseumIdInProcess = "15" }),
-//    job => job.Process("15"),
-//    Cron.Daily()
-//);
 
 app.Run();

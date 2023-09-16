@@ -1,0 +1,11 @@
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\bin\Debug\net6.0\Museums.Service.Sic.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\bin\Debug\net6.0\Museums.Service.Sic.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\bin\Debug\net6.0\Museums.Service.Sic.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\refint\Museums.Service.Sic.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\Museums.Service.Sic.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Service.Sic\obj\Debug\net6.0\ref\Museums.Service.Sic.dll

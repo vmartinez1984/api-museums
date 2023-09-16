@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Description>Nuget para registrar el request y response.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageOutputPath>C:\Users\vmartinez\Documents\NugetLocal</PackageOutputPath>
+    <Authors>Víctor Martínez</Authors>
+    <Company>Sin ningun lugar</Company>
+    <Version>1.0.2</Version>
     
   </PropertyGroup>
 
@@ -20,6 +26,13 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

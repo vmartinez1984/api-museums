@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Museums.Core\Museums.Core.csproj" />
+    <ProjectReference Include="..\Museums.Repository.Sql\Museums.Repository.Sql.csproj" />
     <ProjectReference Include="..\Museums.Repository\Museums.Repository.csproj" />
     <ProjectReference Include="..\Museums.BusinessLayer\Museums.BusinessLayer.csproj" />
     <ProjectReference Include="..\Museums.Service.Scraping\Museums.Service.Scraping.csproj" />

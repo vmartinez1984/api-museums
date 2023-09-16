@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Museums.Service.Scraping"
+    "\\Museums.Repository",
+    "\\Museums.Service.Scraping",
+    "\\Vmartinez.RequestInspector"
   ],
-  "SelectedNode": "\\Museums.Service.Scraping\\ScrapService.cs",
+  "SelectedNode": "\\Vmartinez.RequestInspector\\RequestInspectorMiddleware.cs",
   "PreviewInSolutionExplorer": false
 }

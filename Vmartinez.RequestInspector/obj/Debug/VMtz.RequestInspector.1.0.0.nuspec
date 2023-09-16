@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>VMtz.RequestInspector</id>
+    <version>1.0.0</version>
+    <authors>Víctor Martínez</authors>
+    <readme>README.md</readme>
+    <description>Nuget para registrar el request y response.</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.13" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.13" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.runtimeconfig.json" target="lib\net6.0\VMtz.RequestInspector.runtimeconfig.json" />
+    <file src="C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.dll" target="lib\net6.0\VMtz.RequestInspector.dll" />
+    <file src="C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\README.md" target="\README.md" />
+  </files>
+</package>

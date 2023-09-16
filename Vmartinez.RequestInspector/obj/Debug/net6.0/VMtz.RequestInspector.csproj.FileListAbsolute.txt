@@ -1,4 +1,5 @@
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.runtimeconfig.json
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.dll
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.pdb
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\VMtz.RequestInspector.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspe
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\VMtz.RequestInspector.dll
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\refint\VMtz.RequestInspector.dll
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\VMtz.RequestInspector.pdb
-C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\ref\VMtz.RequestInspector.dll
-C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\bin\Debug\net6.0\VMtz.RequestInspector.runtimeconfig.json
 C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\VMtz.RequestInspector.genruntimeconfig.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Vmartinez.RequestInspector\obj\Debug\net6.0\ref\VMtz.RequestInspector.dll

@@ -29,5 +29,12 @@ namespace Museums.Core.Dtos
         [DefaultValue(null)]
         [Range(1, 7)]
         public int? DayOfWeek { get; set; }
+
+        public string Operacion { get; set; }
+
+
+        public string Comentario { get; set; }
+
+        public string Estado { get; set; }
     }
 }

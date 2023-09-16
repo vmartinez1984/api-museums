@@ -13,16 +13,16 @@ namespace Vmartinez.RequestInspector.Contexts
             _configuration = configuration;
         }
 
-        //public AppDbContext()
-        //{
+        public AppDbContext()
+        {
 
-        //}
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //optionsBuilder.UseSqlServer("Server=.;Database=RequestInspector;User Id=sa;Password=123456; TrustServerCertificate=True");
+                //optionsBuilder.UseSqlServer("Server=.;Database=RequestInspector;User Id=sa;Password=Macross#2012; TrustServerCertificate=True");
                 optionsBuilder.UseSqlServer(_configuration.GetConnectionString("RequestInspector"));
             }
         }

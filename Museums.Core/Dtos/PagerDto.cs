@@ -25,7 +25,7 @@ namespace Museums.Core.Dtos
         [DefaultValue(1)]
         public int PageCurrent { get; set; } = 1;
 
-        [Range(10, 50)]
+        [Range(1, 50)]
         [DefaultValue(10)]
         public int RecordsPerPage { get; set; } = 10;
     }

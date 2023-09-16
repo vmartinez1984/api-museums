@@ -1,0 +1,17 @@
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.csproj.AssemblyReference.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.AssemblyInfoInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.AssemblyInfo.cs
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.csproj.CoreCompileInputs.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Repository.Sql.deps.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Repository.Sql.runtimeconfig.json
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Repository.Sql.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Repository.Sql.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Core.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\bin\Debug\net6.0\Museums.Core.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.csproj.CopyComplete
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\refint\Museums.Repository.Sql.dll
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.pdb
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\Museums.Repository.Sql.genruntimeconfig.cache
+C:\Users\vmartinez\source\repos\vmartinez1984\api-museums\Museums.Repository.Sql\obj\Debug\net6.0\ref\Museums.Repository.Sql.dll

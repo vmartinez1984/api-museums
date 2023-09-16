@@ -21,7 +21,7 @@
           "Serilog.Settings.Configuration": "3.3.0",
           "Serilog.Sinks.MongoDB": "5.1.5",
           "Swashbuckle.AspNetCore": "6.2.3",
-          "VMtz.RequestInspector": "1.0.0"
+          "VMtz.RequestInspector": "1.0.2"
         },
         "runtime": {
           "Museums.Api.dll": {}
@@ -1902,7 +1902,7 @@
           "Museums.Service.Scraping.dll": {}
         }
       },
-      "VMtz.RequestInspector/1.0.0": {
+      "VMtz.RequestInspector/1.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.13",
@@ -3160,7 +3160,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "VMtz.RequestInspector/1.0.0": {
+    "VMtz.RequestInspector/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

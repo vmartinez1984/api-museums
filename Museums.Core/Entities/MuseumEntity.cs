@@ -1,11 +1,18 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Museums.Core.Entities
 {
     public class MuseumEntity
-    {
+    {      
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        [Key]
+        public Guid Id { get; set; } = Guid.NewGuid();
+
         [JsonProperty("museo_id")]
         public int MuseoId { get; set; }
 
@@ -78,13 +85,16 @@ namespace Museums.Core.Entities
         [JsonProperty("fecha_mod")]
         public DateTime? FechaMod { get; set; }
 
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
+               
+
         public string HoariosYCostos { get; set; }
         public string DatosGenerales { get; set; }
+
+        [NotMapped]        
         public List<string> ListUrlImg { get; set; }
-        
+
+        public string UrlImgs { get; set; }
+
         public DateTime? FechaDeActualizacion { get; set; }
 
         public string State { get; set; }

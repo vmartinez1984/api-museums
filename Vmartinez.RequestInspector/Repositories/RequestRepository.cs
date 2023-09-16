@@ -12,6 +12,7 @@ namespace Vmartinez.RequestInspector.Repositories
         {
             _appDbContext = appDbContext;
         }
+
         public async Task<int> AddAsync(HttpContextEntity entity)
         {
             try
@@ -21,9 +22,9 @@ namespace Vmartinez.RequestInspector.Repositories
 
                 return entity.Id;
             }
-            catch 
+            catch(Exception ex)
             {
-
+                Console.WriteLine(ex.ToString());
                 return 0;
             }
         }

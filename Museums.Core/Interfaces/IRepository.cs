@@ -6,7 +6,7 @@ namespace Museums.Core.Interfaces
     {
         public IMuseumRepository Museum { get; }
         public ILogRepository Log { get; }
-        public ICrontabRepository Crontab { get; }
+        public ICrontabRepository Crontab { get; }              
     }
 
     public interface IMuseumRepository
@@ -23,6 +23,7 @@ namespace Museums.Core.Interfaces
         
         Task<MuseumEntity> GetAsync(string id);
         void Update(MuseumEntity entity);
+        Task DeleteAsync(int museoId);        
     }
 
     public interface ICrontabRepository

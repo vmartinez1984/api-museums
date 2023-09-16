@@ -25,5 +25,7 @@ namespace Vmartinez.RequestInspector.Entities
         public DateTime RequestDateRegistration { get; set; } = DateTime.Now;
 
         public DateTime ResponseDateRegistration { get; set; }
+
+        public int StatusCode { get; internal set; }
     }
 }

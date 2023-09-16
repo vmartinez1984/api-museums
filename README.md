@@ -29,3 +29,5 @@ https://ruhollah-jafari.medium.com/learn-how-to-schedule-tasks-with-hangfire-in-
 
 https://procodeguide.com/programming/hangfire-in-aspnet-core-schedule-jobs/
 
+Para generar el script de la migración
+Script-Migration

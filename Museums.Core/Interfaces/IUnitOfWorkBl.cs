@@ -21,13 +21,22 @@ namespace Museums.Core.Interfaces
         /// Init the process for updates of musuems
         /// </summary>
         /// <param name="log"></param>
-        void UpdateMuseums(LogDto log);
+        Task UpdateMuseums(LogDto log);
 
         /// <summary>
         /// Init the process for updates of musuems
         /// </summary>
         /// <param name="log"></param>
         Task UpdateMuseumsAsync(LogDto log);
+
+        /// <summary>
+        /// Get all museums from SIC and save in db
+        /// </summary>
+        /// <returns></returns>
+        Task<string> GetMuseumsFromSicAsync();
+        Task UpdateMuseum(string id);
+
+        Task UpdateMuseumAll();
     }
 
     public interface ILogBl

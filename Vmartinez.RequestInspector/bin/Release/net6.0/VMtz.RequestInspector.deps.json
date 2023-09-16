@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "VMtz.RequestInspector/1.0.0": {
+      "VMtz.RequestInspector/1.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.13",
@@ -522,7 +522,7 @@
     }
   },
   "libraries": {
-    "VMtz.RequestInspector/1.0.0": {
+    "VMtz.RequestInspector/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

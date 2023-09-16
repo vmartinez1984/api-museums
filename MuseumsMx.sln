@@ -20,6 +20,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Service.Scraping", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VMtz.RequestInspector", "Vmartinez.RequestInspector\VMtz.RequestInspector.csproj", "{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Museums.Repository.Sql", "Museums.Repository.Sql\Museums.Repository.Sql.csproj", "{D34500D4-13BE-4BE0-9AD5-716263C0A49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Museums.Service.Sic", "Museums.Service.Sic\Museums.Service.Sic.csproj", "{567E753F-9C0D-4427-B23D-45CF5989B044}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA446F5-5D9D-4BAD-B0C6-D5DEFAE722A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34500D4-13BE-4BE0-9AD5-716263C0A49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34500D4-13BE-4BE0-9AD5-716263C0A49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34500D4-13BE-4BE0-9AD5-716263C0A49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34500D4-13BE-4BE0-9AD5-716263C0A49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567E753F-9C0D-4427-B23D-45CF5989B044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567E753F-9C0D-4427-B23D-45CF5989B044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567E753F-9C0D-4427-B23D-45CF5989B044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567E753F-9C0D-4427-B23D-45CF5989B044}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

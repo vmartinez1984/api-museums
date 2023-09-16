@@ -41,10 +41,18 @@ namespace Museums.Service.Scraping
         private string GetGeneralData(HtmlDocument htmlDocument)
         {
             string generalData;
-            HtmlNode htmlNode;
+            try
+            {
+                HtmlNode htmlNode;
 
-            htmlNode = htmlDocument.DocumentNode.CssSelect("#contenedor_subtemas > div > div").First();
-            generalData = htmlNode.InnerText;
+                htmlNode = htmlDocument.DocumentNode.CssSelect("#contenedor_subtemas > div > div").First();
+                generalData = htmlNode.InnerText;
+            }
+            catch (Exception)
+            {
+
+                generalData = string.Empty;
+            }
 
             return generalData;
         }

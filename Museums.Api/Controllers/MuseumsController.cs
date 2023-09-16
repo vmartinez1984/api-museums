@@ -22,7 +22,7 @@ namespace Museums.Api.Controllers
             IUnitOfWorkBl unitOfWorkBl
             //, ScrapService scrapService
             , ILogger<MuseumsController> logger
-            //, IBackgroundJobClient backgroundJobClient
+        //, IBackgroundJobClient backgroundJobClient
         )
         {
             _unitOfWorkBl = unitOfWorkBl;
@@ -53,7 +53,7 @@ namespace Museums.Api.Controllers
             this.HttpContext.AddHeaderTotalRecords(museumPager.TotalRecords);
             this.HttpContext.AddHeaderTotalRecordsFiltered(museumPager.TotalRecordsFiltered);
 
-            return Ok(museumPager);
+            return Ok(museumPager.ListMuseums);
         }
 
         /// <summary>
@@ -83,24 +83,11 @@ namespace Museums.Api.Controllers
         [HttpGet("{id}/UpdateFromSic")]
         [ProducesResponseType(typeof(ResponseId), StatusCodes.Status202Accepted)]
         [Produces("application/json")]
-        public IActionResult Update(string id)
+        public async Task<IActionResult> Update(string id)
         {
-            // string _id;
+            await _unitOfWorkBl.Scrapy.UpdateMuseum(id);
 
-            // _id = _unitOfWorkBl.Scrapy.Process(id);
-            LogDto log;
-
-            log = new LogDto
-            {
-                DateExecution = DateTime.Now,
-                MuseumIdInProcess = id
-            };
-            log.Id = _unitOfWorkBl.Log.Add(log);
-            //_backgroundJobClient.Enqueue(()=>
-            _unitOfWorkBl.Scrapy.UpdateMuseums(log);
-            //);  
-
-            return Accepted($"Api/Museums/UpdateFromSic/{log.Id}/status", new { Id = log.Id });
+            return Accepted($"Api/Museums/{id}");
         }
 
         /// <summary>
@@ -110,11 +97,30 @@ namespace Museums.Api.Controllers
         [ProducesResponseType(typeof(ResponseId), StatusCodes.Status202Accepted)]
         [Produces("application/json")]
         [HttpGet("UpdateFromSic")]
-        public IActionResult Update()
+        public async Task<IActionResult> UpdateAll()
+        {
+            //string id;
+
+            //id = _unitOfWorkBl.Scrapy.Process();
+
+            //return Accepted($"Api/Museums/UpdateFromSic/{id}/status", new { Id = id });
+            await _unitOfWorkBl.Scrapy.UpdateMuseumAll();
+
+            return Ok();
+        }
+
+        /// <summary>
+        /// Get museums from SIC
+        /// </summary>
+        /// <response code="202">The update is init</response>
+        [ProducesResponseType(typeof(ResponseId), StatusCodes.Status202Accepted)]
+        [Produces("application/json")]
+        [HttpGet("Scraping/Sic")]
+        public async Task<IActionResult> Scraping()
         {
             string id;
 
-            id = _unitOfWorkBl.Scrapy.Process();
+            id = await _unitOfWorkBl.Scrapy.GetMuseumsFromSicAsync();
 
             return Accepted($"Api/Museums/UpdateFromSic/{id}/status", new { Id = id });
         }
@@ -155,5 +161,7 @@ namespace Museums.Api.Controllers
 
             return Ok(item);
         }
+
+
     }
 }
